@@ -20,28 +20,32 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="整合SSM 环境要求  环境：  IDEA MySQL 5.7.19 Tomcat 9 Maven 3.6   数据库环境个人练习  创建一个存放书籍数据的数据库表 123456789101112131415161718CREATE DATABASE &#96;ssmbuild&#96;;USE &#96;ssmbuild&#96;;DROP TABLE IF EXISTS &#96;books&amp;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何整合SSM">
+<meta property="og:url" content="http://yoursite.com/2020/04/05/%E5%A6%82%E4%BD%95%E6%95%B4%E5%90%88SSM/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="整合SSM 环境要求  环境：  IDEA MySQL 5.7.19 Tomcat 9 Maven 3.6   数据库环境个人练习  创建一个存放书籍数据的数据库表 123456789101112131415161718CREATE DATABASE &#96;ssmbuild&#96;;USE &#96;ssmbuild&#96;;DROP TABLE IF EXISTS &#96;books&amp;">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-04-04T16:30:19.458Z">
+<meta property="article:modified_time" content="2020-04-04T16:30:19.721Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/">
+<link rel="canonical" href="http://yoursite.com/2020/04/05/%E5%A6%82%E4%BD%95%E6%95%B4%E5%90%88SSM/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>Hexo</title>
+  <title>如何整合SSM | Hexo</title>
   
 
 
@@ -139,179 +143,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/05/Linux%E7%AE%80%E5%8D%95%E5%91%BD%E4%BB%A4/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/04/05/Linux%E7%AE%80%E5%8D%95%E5%91%BD%E4%BB%A4/" class="post-title-link" itemprop="url">Linux简单命令</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-04-05 01:01:12" itemprop="dateCreated datePublished" datetime="2020-04-05T01:01:12+08:00">2020-04-05</time>
-            </span>
-
-          
-
-        </div>
-      </header>
 
     
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="Linux简单命令"><a href="#Linux简单命令" class="headerlink" title="Linux简单命令"></a>Linux简单命令</h2><blockquote>
-<p>关机</p>
-</blockquote>
-<p>在linux领域内大多用在服务器上，很少遇到关机的操作。毕竟服务器上跑一个服务是永无止境的，除非特殊情况下，不得已才会关机。</p>
-<p>关机指令为：shutdown ；</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">sync # 将数据由内存同步到硬盘中。</span><br><span class="line"></span><br><span class="line">shutdown # 关机指令，你可以man shutdown 来看一下帮助文档。例如你可以运行如下命令关机：</span><br><span class="line"></span><br><span class="line">shutdown –h 10 # 这个命令告诉大家，计算机将在10分钟后关机</span><br><span class="line"></span><br><span class="line">shutdown –h now # 立马关机</span><br><span class="line"></span><br><span class="line">shutdown –h 20:25 # 系统会在今天20:25关机</span><br><span class="line"></span><br><span class="line">shutdown –h +10 # 十分钟后关机</span><br><span class="line"></span><br><span class="line">shutdown –r now # 系统立马重启</span><br><span class="line"></span><br><span class="line">shutdown –r +10 # 系统十分钟后重启</span><br><span class="line"></span><br><span class="line">reboot # 就是重启，等同于 shutdown –r now</span><br><span class="line"></span><br><span class="line">halt # 关闭系统，等同于shutdown –h now 和 poweroff</span><br></pre></td></tr></table></figure>
-
-<p>总结一下，不管是重启系统还是关闭系统，首先要运行 <strong>sync</strong> 命令，把内存中的数据写到磁盘中。</p>
-<ul>
-<li><h3 id="Linux防火墙相关命令"><a href="#Linux防火墙相关命令" class="headerlink" title="Linux防火墙相关命令"></a>Linux防火墙相关命令</h3></li>
-<li><p>下面是red hat/CentOs7关闭防火墙的命令!</p>
-</li>
-<li><p>1:查看防火状态</p>
-</li>
-<li><p>systemctl status firewalld</p>
-</li>
-<li><p>2:暂时关闭防火墙</p>
-</li>
-<li><p>systemctl stop firewalld</p>
-</li>
-<li><p>3:永久关闭防火墙</p>
-</li>
-<li><p>systemctl disable firewalld</p>
-</li>
-<li><p>4:重启防火墙</p>
-</li>
-<li><p>systemctl enable firewalld </p>
-</li>
-</ul>
-<p>1、开放端口</p>
-<p><strong>firewall-cmd –zone=public –add-port=5672/tcp –permanent</strong>  # 开放5672端口</p>
-<p><strong>firewall-cmd –zone=public –remove-port=5672/tcp –permanent</strong> #关闭5672端口</p>
-<p><strong>firewall-cmd –reload</strong>  # 配置立即生效</p>
-<p>2、查看防火墙所有开放的端口</p>
-<p><strong>firewall-cmd –zone=public –list-ports</strong></p>
-<p>5、查看监听的端口</p>
-<p><strong>netstat -lnpt</strong></p>
-<p><img src="https://img2018.cnblogs.com/blog/1336432/201903/1336432-20190302110949754-1765820036.png" alt="img"></p>
-<p><em>PS:centos7默认没有 netstat 命令，需要安装 net-tools 工具，yum install -y net-tools</em></p>
-<p>6、检查端口被哪个进程占用</p>
-<p><strong>netstat -lnpt |grep 5672</strong></p>
-<p><img src="https://img2018.cnblogs.com/blog/1336432/201903/1336432-20190302104128381-1210567174.png" alt="img"></p>
-<p>7、查看进程的详细信息</p>
-<p><strong>ps 6832</strong></p>
-<p><img src="https://img2018.cnblogs.com/blog/1336432/201903/1336432-20190302104342651-779103690.png" alt="img"></p>
-<p>8、中止进程</p>
-<p><strong>kill -9 6832</strong></p>
-<p>*<em>选项与参数: *</em></p>
-<ul>
-<li><strong>-a：</strong>相当於 -pdr 的意思，至於 pdr 请参考下列说明；(常用)</li>
-<li><strong>-p：</strong>连同文件的属性一起复制过去，而非使用默认属性(备份常用)；</li>
-<li><strong>-d：</strong>若来源档为连结档的属性(link file)，则复制连结档属性而非文件本身；</li>
-<li><strong>-r：</strong>递归持续复制，用於目录的复制行为；(常用)</li>
-<li><strong>-f：</strong>为强制(force)的意思，若目标文件已经存在且无法开启，则移除后再尝试一次；</li>
-<li><strong>-i：</strong>若目标档(destination)已经存在时，在覆盖时会先询问动作的进行(常用)</li>
-<li><strong>-l：</strong>进行硬式连结(hard link)的连结档创建，而非复制文件本身。</li>
-<li><strong>-s：</strong>复制成为符号连结档 (symbolic link)，亦即『捷径』文件；</li>
-<li><strong>-u：</strong>若 destination 比 source 旧才升级 destination ！</li>
-</ul>
-<h3 id="文件内容查看"><a href="#文件内容查看" class="headerlink" title="文件内容查看"></a>文件内容查看</h3><blockquote>
-<p>概述</p>
-</blockquote>
-<p>Linux系统中使用以下命令来查看文件的内容：</p>
-<ul>
-<li>cat 由第一行开始显示文件内容</li>
-<li>tac 从最后一行开始显示，可以看出 tac 是 cat 的倒着写！</li>
-<li>nl  显示的时候，顺道输出行号！</li>
-<li>more 一页一页的显示文件内容</li>
-<li>less 与 more 类似，但是比 more 更好的是，他可以往前翻页！</li>
-<li>head 只看头几行</li>
-<li>tail 只看尾巴几行</li>
-</ul>
-<p>你可以使用 <em>man [命令]</em>来查看各个命令的使用文档，如 ：man cp。</p>
-<blockquote>
-<p>cat 由第一行开始显示文件内容</p>
-</blockquote>
-<p>语法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat [-AbEnTv]</span><br></pre></td></tr></table></figure>
-
-<p>选项与参数：</p>
-<ul>
-<li>-A ：相当於 -vET 的整合选项，可列出一些特殊字符而不是空白而已；</li>
-<li>-b ：列出行号，仅针对非空白行做行号显示，空白行不标行号！</li>
-<li>-E ：将结尾的断行字节 $ 显示出来；</li>
-<li>-n ：列印出行号，连同空白行也会有行号，与 -b 的选项不同；</li>
-<li>-T ：将 [tab] 按键以 ^I 显示出来；</li>
-<li>-v ：列出一些看不出来的特殊字符</li>
-</ul>
-<p><strong>系统目录的解释：</strong></p>
-<ul>
-<li><strong>/bin</strong>：bin是Binary的缩写, 这个目录存放着最经常使用的命令。</li>
-<li><strong>/boot：</strong> 这里存放的是启动Linux时使用的一些核心文件，包括一些连接文件以及镜像文件。</li>
-<li><strong>/dev ：</strong> dev是Device(设备)的缩写, 存放的是Linux的外部设备，在Linux中访问设备的方式和访问文件的方式是相同的。</li>
-<li><strong>/etc：</strong> 这个目录用来存放所有的系统管理所需要的配置文件和子目录。</li>
-<li><strong>/home</strong>：用户的主目录，在Linux中，每个用户都有一个自己的目录，一般该目录名是以用户的账号命名的。</li>
-<li><strong>/lib</strong>：这个目录里存放着系统最基本的动态连接共享库，其作用类似于Windows里的DLL文件。</li>
-<li><strong>/lost+found</strong>：这个目录一般情况下是空的，当系统非法关机后，这里就存放了一些文件。</li>
-<li><strong>/media</strong>：linux系统会自动识别一些设备，例如U盘、光驱等等，当识别后，linux会把识别的设备挂载到这个目录下。</li>
-<li><strong>/mnt</strong>：系统提供该目录是为了让用户临时挂载别的文件系统的，我们可以将光驱挂载在/mnt/上，然后进入该目录就可以查看光驱里的内容了。</li>
-<li><strong>/opt</strong>：这是给主机额外安装软件所摆放的目录。比如你安装一个ORACLE数据库则就可以放到这个目录下。默认是空的。</li>
-<li><strong>/proc</strong>：这个目录是一个虚拟的目录，它是系统内存的映射，我们可以通过直接访问这个目录来获取系统信息。</li>
-<li><strong>/root</strong>：该目录为系统管理员，也称作超级权限者的用户主目录。</li>
-<li><strong>/sbin</strong>：s就是Super User的意思，这里存放的是系统管理员使用的系统管理程序。</li>
-<li><strong>/srv</strong>：该目录存放一些服务启动之后需要提取的数据。</li>
-<li><strong>/sys</strong>：这是linux2.6内核的一个很大的变化。该目录下安装了2.6内核中新出现的一个文件系统 sysfs 。</li>
-<li><strong>/tmp</strong>：这个目录是用来存放一些临时文件的。</li>
-<li><strong>/usr</strong>：这是一个非常重要的目录，用户的很多应用程序和文件都放在这个目录下，类似于windows下的program files目录。</li>
-<li><strong>/usr/bin：</strong> 系统用户使用的应用程序。</li>
-<li><strong>/usr/sbin：</strong> 超级用户使用的比较高级的管理程序和系统守护程序。</li>
-<li><strong>/usr/src：</strong> 内核源代码默认的放置目录。</li>
-<li><strong>/var</strong>：这个目录中存放着在不断扩充着的东西，我们习惯将那些经常被修改的目录放在这个目录下。包括各种日志文件。</li>
-<li><strong>/run</strong>：是一个临时文件系统，存储系统启动以来的信息。当系统重启时，这个目录下的文件应该被删掉或清除。</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
@@ -327,10 +162,9 @@
       <meta itemprop="name" content="Hexo">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/04/05/%E5%A6%82%E4%BD%95%E6%95%B4%E5%90%88SSM/" class="post-title-link" itemprop="url">如何整合SSM</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          如何整合SSM
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -353,7 +187,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="整合SSM"><a href="#整合SSM" class="headerlink" title="整合SSM"></a>整合SSM</h2><blockquote>
+        <h2 id="整合SSM"><a href="#整合SSM" class="headerlink" title="整合SSM"></a>整合SSM</h2><blockquote>
 <p>环境要求</p>
 </blockquote>
 <p>环境：</p>
@@ -479,311 +313,33 @@
 
 <p><strong>配置Tomcat，进行运行！</strong></p>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/05/RestFul%20%E9%A3%8E%E6%A0%BC/">
+        
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/04/05/RestFul%20%E9%A3%8E%E6%A0%BC/" class="post-title-link" itemprop="url">RestFul 风格</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-04-05 00:21:20" itemprop="dateCreated datePublished" datetime="2020-04-05T00:21:20+08:00">2020-04-05</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="RestFul-风格"><a href="#RestFul-风格" class="headerlink" title="RestFul 风格"></a>RestFul 风格</h3><p><strong>概念</strong></p>
-<p>Restful就是一个资源定位及资源操作的风格。不是标准也不是协议，只是一种风格。基于这个风格设计的软件可以更简洁，更有层次，更易于实现缓存等机制。</p>
-<p><strong>功能</strong></p>
-<p>资源：互联网所有的事物都可以被抽象为资源</p>
-<p>资源操作：使用POST、DELETE、PUT、GET，使用不同方法对资源进行操作。</p>
-<p>分别对应 添加、 删除、修改、查询。</p>
-<p><strong>传统方式操作资源</strong>  ：通过不同的参数来实现不同的效果！方法单一，post 和 get</p>
-<p>​    <a href="http://127.0.0.1/item/queryItem.action?id=1" target="_blank" rel="noopener">http://127.0.0.1/item/queryItem.action?id=1</a> 查询,GET</p>
-<p>​    <a href="http://127.0.0.1/item/saveItem.action" target="_blank" rel="noopener">http://127.0.0.1/item/saveItem.action</a> 新增,POST</p>
-<p>​    <a href="http://127.0.0.1/item/updateItem.action" target="_blank" rel="noopener">http://127.0.0.1/item/updateItem.action</a> 更新,POST</p>
-<p>​    <a href="http://127.0.0.1/item/deleteItem.action?id=1" target="_blank" rel="noopener">http://127.0.0.1/item/deleteItem.action?id=1</a> 删除,GET或POST</p>
-<p><strong>使用RESTful操作资源</strong> ：可以通过不同的请求方式来实现不同的效果！如下：请求地址一样，但是功能可以不同！</p>
-<p>​    <a href="http://127.0.0.1/item/1" target="_blank" rel="noopener">http://127.0.0.1/item/1</a> 查询,GET</p>
-<p>​    <a href="http://127.0.0.1/item" target="_blank" rel="noopener">http://127.0.0.1/item</a> 新增,POST</p>
-<p>​    <a href="http://127.0.0.1/item" target="_blank" rel="noopener">http://127.0.0.1/item</a> 更新,PUT</p>
-<p>​    <a href="http://127.0.0.1/item/1" target="_blank" rel="noopener">http://127.0.0.1/item/1</a> 删除,DELETE</p>
-<p><strong>学习测试</strong></p>
-<ol>
-<li><p>在新建一个类 RestFulController</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@Controller</span><br><span class="line">public class RestFulController &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>在Spring MVC中可以使用  @PathVariable 注解，让方法参数的值对应绑定到一个URI模板变量上。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">@Controller</span><br><span class="line">public class RestFulController &#123;</span><br><span class="line"></span><br><span class="line">   &#x2F;&#x2F;映射访问路径</span><br><span class="line">   @RequestMapping(&quot;&#x2F;commit&#x2F;&#123;p1&#125;&#x2F;&#123;p2&#125;&quot;)</span><br><span class="line">   public String index(@PathVariable int p1, @PathVariable int p2, Model model)&#123;</span><br><span class="line">       </span><br><span class="line">       int result &#x3D; p1+p2;</span><br><span class="line">       &#x2F;&#x2F;Spring MVC会自动实例化一个Model对象用于向视图中传值</span><br><span class="line">       model.addAttribute(&quot;msg&quot;, &quot;结果：&quot;+result);</span><br><span class="line">       &#x2F;&#x2F;返回视图位置</span><br><span class="line">       return &quot;test&quot;;</span><br><span class="line">       </span><br><span class="line">  &#125;</span><br><span class="line">   </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>我们来测试请求查看下</p>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7JOmNdhqNbrRK9XaseXIDsu5BqyAspPK6GlhgxeV1nS0RWPnUfVBuaiadicaicQepibic2EVkyDflUh3qQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
-</li>
-<li><p>思考：使用路径变量的好处？</p>
-</li>
-<li><ul>
-<li><p>使路径变得更加简洁；</p>
-</li>
-<li><p>获得参数更加方便，框架会自动进行类型转换。</p>
-</li>
-<li><p>通过路径变量的类型可以约束访问参数，如果类型不一样，则访问不到对应的请求方法，如这里访问是的路径是/commit/1/a，则路径与方法不匹配，而不会是参数转换失败。</p>
-</li>
-</ul>
-</li>
-</ol>
-<pre><code>![img](https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7JOmNdhqNbrRK9XaseXIDsumkKQDDBx9D7E67IK9dmVtHnjn0WjPSOZxKnwz9AXrTPRLy6Xu42yrg/640?wx_fmt=png&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1)</code></pre><ol start="6">
-<li><p>我们来修改下对应的参数类型，再次测试</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;映射访问路径</span><br><span class="line">@RequestMapping(&quot;&#x2F;commit&#x2F;&#123;p1&#125;&#x2F;&#123;p2&#125;&quot;)</span><br><span class="line">public String index(@PathVariable int p1, @PathVariable String p2, Model model)&#123;</span><br><span class="line"></span><br><span class="line">   String result &#x3D; p1+p2;</span><br><span class="line">   &#x2F;&#x2F;Spring MVC会自动实例化一个Model对象用于向视图中传值</span><br><span class="line">   model.addAttribute(&quot;msg&quot;, &quot;结果：&quot;+result);</span><br><span class="line">   &#x2F;&#x2F;返回视图位置</span><br><span class="line">   return &quot;test&quot;;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7JOmNdhqNbrRK9XaseXIDsuJXyVjg5EaXZiaO78ibGzhUXnEz5UlbRTRDKzGNh0t5WspXrpvSLe9y9w/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
-</li>
-</ol>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/04/05/RestFul%20%E9%A3%8E%E6%A0%BC/" rel="prev" title="RestFul 风格">
+      <i class="fa fa-chevron-left"></i> RestFul 风格
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/04/05/Linux%E7%AE%80%E5%8D%95%E5%91%BD%E4%BB%A4/" rel="next" title="Linux简单命令">
+      Linux简单命令 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/05/springMVC/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/04/05/springMVC/" class="post-title-link" itemprop="url">springMVC</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2020-04-05 00:02:43 / Modified: 00:13:45" itemprop="dateCreated datePublished" datetime="2020-04-05T00:02:43+08:00">2020-04-05</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="1、什么是SpringMVC"><a href="#1、什么是SpringMVC" class="headerlink" title="1、什么是SpringMVC"></a>1、什么是SpringMVC</h2><h3 id="1-1、概述"><a href="#1-1、概述" class="headerlink" title="1.1、概述"></a>1.1、概述</h3><p><img src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7KwPOPWq00pMJiaK86lF6BjIRQkoR3WJaVZzicPAx3NumuY40RXSQOPzIbEicYsT0ySCPQ8cvQc2ic1Aw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
-<p>Spring MVC是Spring Framework的一部分，是基于Java实现MVC的轻量级Web框架。</p>
-<p>查看官方文档：<a href="https://docs.spring.io/spring/docs/5.2.0.RELEASE/spring-framework-reference/web.html#spring-web" target="_blank" rel="noopener">https://docs.spring.io/spring/docs/5.2.0.RELEASE/spring-framework-reference/web.html#spring-web</a></p>
-<p><strong>学习SpringMVC的必要性</strong></p>
-<p> Spring MVC的特点：</p>
-<ol>
-<li>轻量级，简单易学</li>
-<li>高效 , 基于请求响应的MVC框架</li>
-<li>与Spring兼容性好，无缝结合</li>
-<li>约定优于配置</li>
-<li>功能强大：RESTful、数据验证、格式化、本地化、主题等</li>
-<li>简洁灵活</li>
-</ol>
-<p>Spring的web框架围绕<strong>DispatcherServlet</strong> [ 调度Servlet ] 设计。</p>
-<p>DispatcherServlet的作用是将请求分发到不同的处理器。从Spring 2.5开始，使用Java 5或者以上版本的用户可以采用基于注解形式进行开发，十分简洁；</p>
-<p>SpringMVC好 , 简单 , 便捷 , 易学 , 天生和Spring无缝集成(使用SpringIoC和Aop) , 使用约定优于配置 . 能够进行简单的junit测试 . 支持Restful风格 .异常处理 , 本地化 , 国际化 , 数据验证 , 类型转换 , 拦截器 等等…… </p>
-<h3 id="1-2、中心控制器"><a href="#1-2、中心控制器" class="headerlink" title="1.2、中心控制器"></a>1.2、中心控制器</h3><p>​    Spring的web框架围绕DispatcherServlet设计。DispatcherServlet的作用是将请求分发到不同的处理器。从Spring 2.5开始，使用Java 5或者以上版本的用户可以采用基于注解的controller声明方式。</p>
-<p>​    Spring MVC框架像许多其他MVC框架一样, <strong>以请求为驱动</strong> , <strong>围绕一个中心Servlet分派请求及提供其他功能</strong>，<strong>DispatcherServlet是一个实际的Servlet (它继承自HttpServlet 基类)</strong>。</p>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7KwPOPWq00pMJiaK86lF6BjI7ENu0jNibPiaiaiaBhyx6o9UUyU82Mddg4DjwzniaczmTLRbAtI9pKJq1tQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
-<p>SpringMVC的原理如下图所示：</p>
-<p>​    当发起请求时被前置的控制器拦截到请求，根据请求参数生成代理请求，找到请求对应的实际控制器，控制器处理请求，创建数据模型，访问数据库，将模型响应给中心控制器，控制器使用模型与视图渲染视图结果，将结果返回给中心控制器，再将结果返回给请求者。</p>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7KwPOPWq00pMJiaK86lF6BjIaosVziclWLEJQkzobxHrpHcmtu2yTeVWPmEI4Yq5PaicS52VaJt8dYfQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
-<h3 id="1-3、SpringMVC执行原理"><a href="#1-3、SpringMVC执行原理" class="headerlink" title="1.3、SpringMVC执行原理"></a>1.3、SpringMVC执行原理</h3><p><img src="https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7KwPOPWq00pMJiaK86lF6BjIbmPOkY8TxF6qvGAGXxC7dArYcr8uJlWoVC4aF4bfxgCGCD8sHg8mgw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
-<p>图为SpringMVC的一个较完整的流程图，实线表示SpringMVC框架提供的技术，不需要开发者实现，虚线表示需要开发者实现。</p>
-<p><strong>简要分析执行流程</strong></p>
-<ol>
-<li><p>DispatcherServlet表示前置控制器，是整个SpringMVC的控制中心。用户发出请求，DispatcherServlet接收请求并拦截请求。</p>
-<p>我们假设请求的url为 : <a href="http://localhost:8080/SpringMVC/hello" target="_blank" rel="noopener">http://localhost:8080/SpringMVC/hello</a></p>
-</li>
-</ol>
-<p>   <strong>如上url拆分成三部分：</strong></p>
-<p>   <a href="http://localhost:8080服务器域名">http://localhost:8080服务器域名</a></p>
-<p>   SpringMVC部署在服务器上的web站点</p>
-<p>   hello表示控制器</p>
-<p>   通过分析，如上url表示为：请求位于服务器localhost:8080上的SpringMVC站点的hello控制器。</p>
-<ol start="2">
-<li><p>HandlerMapping为处理器映射。DispatcherServlet调用HandlerMapping,HandlerMapping根据请求url查找Handler。</p>
-</li>
-<li><p>HandlerExecution表示具体的Handler,其主要作用是根据url查找控制器，如上url被查找控制器为：hello。</p>
-</li>
-<li><p>HandlerExecution将解析后的信息传递给DispatcherServlet,如解析控制器映射等。</p>
-</li>
-<li><p>HandlerAdapter表示处理器适配器，其按照特定的规则去执行Handler。</p>
-</li>
-<li><p>Handler让具体的Controller执行。</p>
-</li>
-<li><p>Controller将具体的执行信息返回给HandlerAdapter,如ModelAndView。</p>
-</li>
-<li><p>HandlerAdapter将视图逻辑名或模型传递给DispatcherServlet。</p>
-</li>
-<li><p>DispatcherServlet调用视图解析器(ViewResolver)来解析HandlerAdapter传递的逻辑视图名。</p>
-</li>
-<li><p>视图解析器将解析的逻辑视图名传给DispatcherServlet。</p>
-</li>
-<li><p>DispatcherServlet根据视图解析器解析的视图结果，调用具体的视图。</p>
-</li>
-<li><p>最终视图呈现给用户。</p>
-</li>
-</ol>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/04/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/04/04/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-04-04 22:43:22" itemprop="dateCreated datePublished" datetime="2020-04-04T22:43:22+08:00">2020-04-04</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
@@ -836,6 +392,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#整合SSM"><span class="nav-number">1.</span> <span class="nav-text">整合SSM</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
